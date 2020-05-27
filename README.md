@@ -1,4 +1,3 @@
-# filter_search_tool
-A content type for SeattleU Content Editors
-### Building 3 Prototypes
-Looking for sustainability and avoiding depreciated items like jquery quicksearch
+# Filter Search Tool
+A content type and filter/search application built to the specifications of the Seattle University Education Abroad Department.
+
