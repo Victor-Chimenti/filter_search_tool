@@ -37,6 +37,7 @@ try {
   var listOfFeatures = "";
   var fieldOfStudy = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Field of Study' output='normal' display_field='value' />");
   var listOfStudyAreas = "";
+  var credits = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Credits' output='normal' display_field='value' />");
   var budget = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Program Budgets' output='normal' display_field='value' />");
   var prerequisites = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Prerequisites' output='normal' display_field='value' />");
   var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
@@ -185,10 +186,18 @@ try {
   /* -- Write Program Level 6 Details --*/
   if (budget != "") {
       document.write('<div class="row levelSix">');
-      document.write('<div class="col-xs-12 programDetails budget"><h5>Program Budgets</h5>' + budget + '</div>');
+      document.write('<div class="col-xs-12 programDetails credits"><h5>Course Credits</h5>' + credits + '</div>');
       document.write('</div>');
   } else {
-      document.write('<div class="row levelSix budget" style="display: none"><h5>No Budget Provided</h5></div>');
+      document.write('<div class="row levelSix credits" style="display: none"><h5>No Credits Provided</h5></div>');
+  }
+  /* -- Write Program Level 6 Details --*/
+  if (budget != "") {
+    document.write('<div class="row levelSix">');
+    document.write('<div class="col-xs-12 programDetails budget"><h5>Program Budgets</h5>' + budget + '</div>');
+    document.write('</div>');
+  } else {
+    document.write('<div class="row levelSix budget" style="display: none"><h5>No Budget Provided</h5></div>');
   }
   /* -- Write Program Level 7 Details --*/
   if (prerequisites != "") {
