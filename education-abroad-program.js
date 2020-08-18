@@ -202,7 +202,7 @@ try {
   /* -- Write Program Level 8 Details --*/
   if (prerequisites != "") {
       document.write('<div class="row levelEight">');
-      document.write('<div class="col-xs-12 programDetails prerequisites"><h5>Additional Prerequisites</h5><p>' + prerequisites + '</p></div>');
+      document.write('<div class="col-xs-12 programDetails prerequisites"><h5>Additional Prerequisites</h5>' + prerequisites + '</div>');
       document.write('</div>');
   } else {
       document.write('<div class="row levelEight prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
