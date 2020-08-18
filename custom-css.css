@@ -264,6 +264,15 @@ figure figcaption.programImageCaption {
     padding: 5px;
 }
 
+.educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails.credits p {
+    background: #4d4d4d;
+    color: #ffffff;
+    float: left;
+    line-height: 1.2;
+    margin: 0 10px 10px 16px;
+    padding: 5px;
+}
+
 .educationAbroadItemWrapper .educationAbroadItem .card-body .programDetails ul li:before {
     content: '';
 }
