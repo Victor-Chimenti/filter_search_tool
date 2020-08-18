@@ -184,37 +184,37 @@ try {
   document.write('<div class="col-xs-12 programDetails fieldOfStudy"><h5>Field of Study</h5><ul class="field">' + listOfStudyAreas + '</ul></div>');
   document.write('</div>');
   /* -- Write Program Level 6 Details --*/
-  if (budget != "") {
+  if (credits != "") {
       document.write('<div class="row levelSix">');
       document.write('<div class="col-xs-12 programDetails credits"><h5>Course Credits</h5>' + credits + '</div>');
       document.write('</div>');
   } else {
       document.write('<div class="row levelSix credits" style="display: none"><h5>No Credits Provided</h5></div>');
   }
-  /* -- Write Program Level 6 Details --*/
+  /* -- Write Program Level 7 Details --*/
   if (budget != "") {
-    document.write('<div class="row levelSix">');
+    document.write('<div class="row levelSeven">');
     document.write('<div class="col-xs-12 programDetails budget"><h5>Program Budgets</h5>' + budget + '</div>');
     document.write('</div>');
   } else {
-    document.write('<div class="row levelSix budget" style="display: none"><h5>No Budget Provided</h5></div>');
+    document.write('<div class="row levelSeven budget" style="display: none"><h5>No Budget Provided</h5></div>');
   }
-  /* -- Write Program Level 7 Details --*/
+  /* -- Write Program Level 8 Details --*/
   if (prerequisites != "") {
-      document.write('<div class="row levelSeven">');
+      document.write('<div class="row levelEight">');
       document.write('<div class="col-xs-12 programDetails prerequisites"><h5>Additional Prerequisites</h5><p>' + prerequisites + '</p></div>');
       document.write('</div>');
   } else {
-      document.write('<div class="row levelSeven prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
+      document.write('<div class="row levelEight prerequisites" style="display: none"><h5>No Prerequisites Provided</h5></div>');
   }
-  /* -- Write Program Level 8 Details --*/
+  /* -- Write Program Level 9 Details --*/
   if (keyWords != "") {
       /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
-      document.write('<div class="row levelEight">');
+      document.write('<div class="row levelNine">');
       document.write('<div class="col-xs-12 programDetails keyWords" style="display: none"><h5>Keywords</h5><p>' + keyWords + '</p></div>');
       document.write('</div>');
   } else {
-      document.write('<div class="row levelEight keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+      document.write('<div class="row levelNine keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
   }
 
 
